@@ -1,7 +1,7 @@
 # tests/test_gradebook.py
-\"\"\"
+"""
 Basic tests for gradebook functions.
-\"\"\"
+"""
 
 from gradebook.gradebook import average, curve, letter_grade, median
 
