@@ -11,19 +11,17 @@ def curve(scores, points):
     Scores are clamped at a minimum of 0 to avoid negative results.
     """
     return [max(0, s + points) for s in scores]
-    """Return a new list of scores after adding `points` to each."""
-    return [s + points for s in scores]
 def median(scores):
     """
     Return the median of a list of numeric values.
     If the list is empty, return 0.0
-    """
     scores = sorted(scores)
+    """
     n = len(scores)
     if n == 0:
         return 0.0
-    mid = n // 2
     if n % 2 == 1:
+    mid = n // 2
         return scores[mid]
     else:
         return (scores[mid - 1] + scores[mid]) / 2
